@@ -1,0 +1,165 @@
+/*
+Theme Name: BlankSlate Child Theme
+Template: blankslate
+Author: Enno Hyttrek
+Version: 1.2
+*/
+
+/*
+VARIABLES
+*/
+
+
+/**
+Standard Colors
+**/
+:root {
+    --base-color: 200;
+    --primary-color: hsl(var(--base-color), 55%, 34%);
+    --white: #ffffff;
+}
+
+
+
+/*
+LAYOUT
+*/
+
+.post-edit-link,
+#branding,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    padding: 0 20px;
+    margin-bottom: 1rem;
+}
+
+.home #branding h1 {
+    padding: 0;
+}
+
+#header {
+    padding-bottom: 1rem;
+}
+
+#content {
+    min-height: 50vh;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*
+NAVIGATION
+*/
+
+#menu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding-top: 0.5em;
+}
+
+#menu > div > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu > div > ul > li {
+    margin-right: 1em;
+}
+
+
+
+/*
+TYPOGRAPHY
+*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
+/*
+COLOR
+*/
+
+body {
+    background: hsl(var(--base-color), 34%, 21%);
+}
+
+#header {
+    background: hsl(var(--base-color), 13%, 42%);
+    background: var(--primary-color);
+}
+
+#menu {
+    background: hsl(var(--base-color), 13%, 55%);
+}
+#sidebar a,
+#sidebar,
+#footer,
+#header a,
+#header,
+#menu a {
+    color: #fff;
+}
+
+#content {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+/*
+RESPONSIVE
+*/
+
+@media only screen and (min-width: 600px) {
+    
+    #container {
+        display: flex;
+    }
+    
+    #content {
+        width: 70%;
+    }
+    
+    #sidebar {
+        width: 30%;
+    }
+    
+    #sidebar {
+    background: hsl(var(--base-color), 13%, 42%);
+    }
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
